@@ -2,29 +2,29 @@ import { lazy, Suspense } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 // Contexts
-import { AuthProvider } from '../context/AuthContext';
-import { ThemeProvider } from '../context/ThemeContext';
+import { AuthProvider } from './context/AuthContext';
+import { ThemeProvider } from './context/ThemeContext';
 
 // Layout & Components
-import ErrorBoundary from '../components/ErrorBoundary';
-import RequireAuth from '../components/RequireAuth';
-import Layout from '../layouts/Layout';
-import Skeleton from '../Ui/Skleton'; // Assuming your Ui folder is still in src
+import ErrorBoundary from './components/ErrorBoundary';
+import RequireAuth from './components/RequireAuth';
+import Layout from './layouts/Layout';
+import Skeleton from './Ui/Skleton'; // Assuming your Ui folder is still in src
 
 // Pages
-import Home from '../pages/Home';
-import Menu from '../pages/Menu';
-import DishDetail from '../pages/DishDetail';
-import Cart from '../pages/Cart';
-import Login from '../pages/Login';
-import NotFound from '../pages/NotFound';
+import Home from './pages/Home';
+import Menu from './pages/Menu';
+import DishDetail from './pages/DishDetail';
+import Cart from './pages/Cart';
+import Login from './pages/Login';
+import NotFound from './pages/NotFound';
 
 // CSS
 import '../App.css';
 
 // Lazy loaded pages
-const Checkout = lazy(() => import('../pages/Checkout'));
-const Receipt = lazy(() => import('../pages/Receipt'));
+const Checkout = lazy(() => import('./pages/Checkout'));
+const Receipt = lazy(() => import('./pages/Receipt'));
 
 function menuFallback(retry) {
   return (
