@@ -8,7 +8,7 @@ import { ThemeProvider } from './context/ThemeContext';
 import ErrorBoundary from './components/ErrorBoundary';
 import RequireAuth from './components/RequireAuth';
 import Layout from './layouts/Layout';
-import Skeleton from './Ui/Skleton';
+import Skeleton from './temp-Ui/Skleton';
 
 import Home from './pages/Home';
 import Menu from './pages/Menu';
