@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import Dish from './Dish';
 import Card from './Card';
-import Modal from '../temp-Ui/Modal';
+import Modal from '../Ui/Modal';
 import { useAddItem } from '../store/cartStore';
 
 function DishList({ dishes }) {
