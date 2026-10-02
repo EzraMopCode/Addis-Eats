@@ -10,17 +10,17 @@ import RequireAuth from './components/RequireAuth';
 import Layout from './layouts/Layout';
 import Skeleton from './Ui/Skleton';
 
-import Home from './temp-pages/Home';
-import Menu from './temp-pages/Menu';
-import DishDetail from './temp-pages/DishDetail';
-import Cart from './temp-pages/Cart';
-import Login from './temp-pages/Login';
-import NotFound from './temp-pages/NotFound';
+import Home from './pages/Home';
+import Menu from './pages/Menu';
+import DishDetail from './pages/DishDetail';
+import Cart from './pages/Cart';
+import Login from './pages/Login';
+import NotFound from './pages/NotFound';
 
 import './App.css';
 
-const Checkout = lazy(() => import('./temp-pages/Checkout'));
-const Receipt = lazy(() => import('./temp-pages/Receipt'));
+const Checkout = lazy(() => import('./pages/Checkout'));
+const Receipt = lazy(() => import('./pages/Receipt'));
 
 function menuFallback(retry) {
   return (
